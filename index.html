@@ -2,11 +2,116 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>我的个人记录网站</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>我的个人记录</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #1a1a2e;
+            background-color: #f5f7fa;
+        }
+        h1 {
+            color: #16213e;
+            border-bottom: 3px solid #e94560;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #0f3460;
+            margin-top: 30px;
+        }
+        .post {
+            background: white;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 12px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+        }
+        .post:hover {
+            transform: translateX(5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .post-title {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #e94560;
+            margin-bottom: 8px;
+        }
+        .post-date {
+            font-size: 0.85em;
+            color: #777;
+            margin-bottom: 10px;
+        }
+        .post-summary {
+            color: #333;
+        }
+        a {
+            color: #e94560;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .math-badge {
+            background: #16213e;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+    </style>
+    <!-- 数学公式支持 -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
-    <h1>你好，世界！</h1>
-    <p>这是我的第一个 GitHub Pages 网站。</p>
-    <p>我将在这里记录我的学习和生活。</p>
+
+    <h1>📝 我的个人记录</h1>
+    
+    <div class="math-badge">
+        支持 LaTeX 数学公式：$E = mc^2$ 和 $$\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}$$
+    </div>
+
+    <h2>📌 关于我</h2>
+    <p>这里是我的个人记录空间。我会在这里分享：</p>
+    <ul>
+        <li>数学学习笔记</li>
+        <li>编程心得</li>
+        <li>日常思考和记录</li>
+    </ul>
+
+    <h2>📖 最新记录</h2>
+
+    <div class="post">
+        <div class="post-title">第一篇：你好，世界</div>
+        <div class="post-date">2026-05-14</div>
+        <div class="post-summary">
+            这是我的第一个记录。网站搭建好了，接下来会持续更新内容。
+            数学公式测试：$x^2 + y^2 = z^2$ 和 $$\sum_{n=1}^{\infty} \frac{1}{n^2} = \frac{\pi^2}{6}$$
+        </div>
+    </div>
+
+    <div class="post">
+        <div class="post-title">关于数学公式的写法</div>
+        <div class="post-date">2026-05-14</div>
+        <div class="post-summary">
+            在这个网站里，你可以直接写 LaTeX 公式。行内公式用 $...$，独立公式用 $$...$$。
+            例如：$e^{i\pi} + 1 = 0$，或者：
+            $$
+            \frac{d}{dx} \left( \int_{a}^{x} f(t) dt \right) = f(x)
+            $$
+        </div>
+    </div>
+
+    <hr>
+    <p style="text-align: center; color: #777; font-size: 0.8em;">
+        © 2026 我的个人记录 | 持续更新中
+    </p>
+
 </body>
 </html>
